@@ -1,0 +1,180 @@
+import groovy.io.FileType
+double ErrorPrev
+def Buildstatus = false
+def Email_Date
+def Email_StartTime
+def Email_EndTime
+def time
+pipeline {
+  agent {
+    label "master"
+  }
+  stages {
+    stage('Execution Scenario Setup') { 
+      steps {
+        script {
+		
+		def props = readProperties file: 'C:/Users/vimalrajv/Pictures/FinalDemo/RepoDummy/RepoDummy/Configuration/Jenkins.properties'
+		def ProjectName=props.ProjectName
+
+		def Scenario_Setup = props.Scenarios
+		def Maximum_Error =props.MaximumError
+		def Email_Failure =props.Email_Failure
+		
+		Buildstatus = false
+		
+          //To know the workspace
+          echo "working space is ${workspace}"
+		  
+		 
+		Email_StartTime = new Date().format( "hh:mm a" )
+		
+          // to create files
+          bat "java -jar CreateFiles_V2.0.jar"
+
+          //To get the name& size of Subfolders from the directory  
+          def list = []
+          def mydir = "${baseproject}Bat_File"
+          dir(mydir) {
+            def files = findFiles()
+            files.each {
+              f ->
+              if (f.directory) {
+                // echo "This is directory: ${f.name} "
+                list.add(f.name)
+              }
+            }
+            println "No of subfolders: " + list.size()
+          }
+          //clear log directory
+          def logdir = "${logdir}"
+          def files = new java.io.File(logdir).listFiles()
+          for (File file: files)
+          if (!file.isDirectory()) file.delete();
+
+          //to get the start time
+          date = new Date()
+          def start_time = date.getTime()
+
+          //To run bat files in the subfolders
+          ErrorPrev = 0
+          for (int i = 0; i < list.size(); i++) {
+            def tests = [: ]
+            for (f in findFiles(glob: '**/Bat_File/' + list[i] + '/*.bat')) {
+              def temp_name = f
+
+              //log snippet
+              def name = temp_name.toString()
+              String[] batfilename
+              String[] lname
+              String[] logname
+              batfilename = name.split('\\\\', 2)
+              lname = batfilename[1].split('[.]', 0)
+              logname = lname[0].split('\\\\', 3)
+			  String stagename = list[i] +"_"+logname[2]
+              tests["${temp_name}"] = {
+                node {
+                  stage("${stagename}") {
+				 def str5 =  "${baseproject}"+batfilename[1]
+				 echo "${str5}"
+                    bat "${baseproject}" + batfilename[1] + "> ${logdir}/" + logname[2] + ".txt"
+                  }
+                }
+              }
+            }
+            parallel tests
+
+            double Errorcheck = "${Maximum_Error}".toDouble()
+            double ErrorCurrent = Error_Handling();
+            double Error_rate = ErrorCurrent - ErrorPrev;
+            if (Error_rate >= Errorcheck) {
+              error "Build failure"
+            }
+            else {
+              println("Good to go!")
+              ErrorPrev = ErrorPrev + Error_rate
+            }
+          }
+
+          // to store pdf report
+          def date1 = new Date()
+          def end_time = date1.getTime()
+		   def date = new Date().format( 'dd-MM-YYYY' )
+			def datetime = new Date()
+			def hours = datetime.hours
+			def mins =  datetime.minutes
+			def sec =  datetime.seconds
+			time = "${date}"+"_${hours}_" +"${mins}"
+          bat "curl -o ${grafanareportpath}_${time}.pdf http://localhost:8686/api/v5/report/TestProject?from=${start_time}"
+          
+          //bat "curl -o ${grafanareportpath} -d from=${start_time} --data-urlencode to=${end_time} http://localhost:8686/api/v5/report/TestProject?"
+		  
+		  Buildstatus = true
+          
+          Email_EndTime = new Date().format( "hh:mm a" )
+        }
+      }
+    }
+	stage('Email'){
+	steps{
+	script{
+	
+	def props = readProperties file: 'C:/Users/vimalrajv/Pictures/FinalDemo/RepoDummy/RepoDummy/Configuration/Jenkins.properties'
+		
+		def ProjectName=props.ProjectName
+
+		def Scenario_Setup = props.Scenarios
+		def Maximum_Error =props.MaximumError
+		def Email_Failure =props.Email_BuildFailure
+	echo"${Email_Failure}"
+	
+    
+ Email_Date = new Date().format( 'dd-MM-YYYY' )
+
+	if(Buildstatus){
+	emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ''' +"${Scenario_Setup}" +'''test high level execution report conducted today between ''' +"${Email_Date} "+"${Email_StartTime}"+''' to '''+"${Email_EndTime}"+ '''<br><br>
+Execution Status: Success <br><br>Regards,<br>PE Team''',  subject: "${ProjectName} | ${Scenario_Setup} | ${Email_Date}  | Success", to: "${Email_Failure}"
+	}
+	else{
+	emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ''' +"${Scenario_Setup}" +'''test high level execution report conducted today between ''' +"${Email_Date} "+"${Email_StartTime}"+''' to '''+"${Email_EndTime}"+ '''<br><br>
+Execution Status: Failure <br><br>Regards,<br>PE Team''',  subject: "${ProjectName} | ${Scenario_Setup} | ${Email_Date}  | Failure", to: "${Email_Failure}"
+	
+	}
+	}
+	}
+	
+	}
+	
+  }
+   //post{
+      //  failure {
+      //         emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ${ExecutionScenario} test high level execution report conducted today $BUILD_TIMESTAMP <br><br>
+//Execution Status: Fail <br><br>Regards,<br>PE Team''',  subject: '${ProjectName} | ${Scenario_Setup} | $BUILD_TIMESTAMP | Fail', to: '${Email_Failure}'
+         //   }
+     //    success {
+    //           emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ${ExecutionScenario} test high level execution report conducted today $BUILD_TIMESTAMP <br><br>
+//Execution Status: Success <br><br>Regards,<br>PE Team''',  subject: '${ProjectName} | ${Scenario_Setup} | $BUILD_TIMESTAMP | Success', to: '${Email_Failure}'
+  //        }      
+  //  }
+}
+
+@NonCPS
+ def Error_Handling(){
+
+             def logdir = "${logdir}"
+             def files = new java.io.File(logdir).listFiles()
+             def Error_Percent=0.0
+               if (files.length >0){
+              new File(logdir).eachFile(FileType.FILES) { file ->
+              def index = file.findLastIndexOf {it =~ "summary =" }
+              //echo "${index}"
+              String str = file.readLines().get(index)
+              //echo "${str}"
+                     String Err= str.substring(str.indexOf("(")+1,str.indexOf("%"));
+                     double result = Err.toDouble()
+                      Error_Percent = Error_Percent+result
+                     // echo "${Error_Percent}"
+                 }
+                }
+                return Error_Percent
+                }
