@@ -1,4 +1,0 @@
-@ECHO OFF 
-set PropertyFilePath=D:\Performance\Non-Project\Specialization\Assets & Accelarators\Execution Scenario Automator\FrameworkRepo\Framework_Inputs\Property_File\IBTestPlan_Final_10LoadTest.properties
-cd D:\Performance\Non-Project\Tools\apache-jmeter-5.0\bin
-jmeter -JPropertyPath=%PropertyFilePath% -n -t D:\Performance\Non-Project\Specialization\Assets & Accelarators\Execution Scenario Automator\FrameworkRepo\Framework_Inputs\Scripts\IBTestPlan_Final.jmx -R 127.0.0.1 -l D:\Performance\Non-Project\Specialization\Assets & Accelarators\Execution Scenario Automator\FrameworkRepo\Framework_Outputs\Logs\Jmeter\JTL_Log\JTL_IBTestPlan_Final.jtl
