@@ -25,69 +25,69 @@
       <hashTree/>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
-          <elementProp name="Home_Page_Thread" elementType="Argument">
-            <stringProp name="Argument.name">Home_Page_Thread</stringProp>
-            <stringProp name="Argument.value">${__P(Home_Page_Thread,15)}</stringProp>
+          <elementProp name="Home_PageThread" elementType="Argument">
+            <stringProp name="Argument.name">Home_PageThread</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PageThread,15)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Home_Page_Loop" elementType="Argument">
-            <stringProp name="Argument.name">Home_Page_Loop</stringProp>
-            <stringProp name="Argument.value">${__P(Home_Page_Loop,2)}</stringProp>
+          <elementProp name="Home_PageLoop" elementType="Argument">
+            <stringProp name="Argument.name">Home_PageLoop</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PageLoop,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Home_Page_Pacing" elementType="Argument">
-            <stringProp name="Argument.name">Home_Page_Pacing</stringProp>
-            <stringProp name="Argument.value">${__P(Home_Page_Pacing,100)}</stringProp>
+          <elementProp name="Home_PagePacing" elementType="Argument">
+            <stringProp name="Argument.name">Home_PagePacing</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PagePacing,100)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Home_Page_Ramup" elementType="Argument">
-            <stringProp name="Argument.name">Home_Page_Ramup</stringProp>
-            <stringProp name="Argument.value">${__P(Home_Page_Ramup,25)}</stringProp>
+          <elementProp name="Home_PageRamup" elementType="Argument">
+            <stringProp name="Argument.name">Home_PageRamup</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PageRamup,25)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_Vets_Thread" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_Vets_Thread</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_Vets_Thread,15)}</stringProp>
+          <elementProp name="Search_for_VetsThread" elementType="Argument">
+            <stringProp name="Argument.name">Search_for_VetsThread</stringProp>
+            <stringProp name="Argument.value">${__P(Search_for_VetsThread,15)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_Vets_Loop" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_Vets_Loop</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_Vets_Loop,2)}</stringProp>
+          <elementProp name="Search_for_VetsLoop" elementType="Argument">
+            <stringProp name="Argument.name">Search_for_VetsLoop</stringProp>
+            <stringProp name="Argument.value">${__P(Search_for_VetsLoop,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_vets_Pacing" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_vets_Pacing</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_vets_Pacing,100)}</stringProp>
+          <elementProp name="Search_for_vetsPacing" elementType="Argument">
+            <stringProp name="Argument.name">Search_for_vetsPacing</stringProp>
+            <stringProp name="Argument.value">${__P(Search_for_vetsPacing,100)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_vets_Ramup" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_vets_Ramup</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_vets_Ramup,25)}</stringProp>
+          <elementProp name="Search_for_vetsRamup" elementType="Argument">
+            <stringProp name="Argument.name">Search_for_vetsRamup</stringProp>
+            <stringProp name="Argument.value">${__P(Search_for_vetsRamup,25)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Owners_Thread" elementType="Argument">
-            <stringProp name="Argument.name">Owners_Thread</stringProp>
-            <stringProp name="Argument.value">${__P(Owners_Thread,20)}</stringProp>
+          <elementProp name="OwnersThread" elementType="Argument">
+            <stringProp name="Argument.name">OwnersThread</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersThread,20)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Owners_Loop" elementType="Argument">
-            <stringProp name="Argument.name">Owners_Loop</stringProp>
-            <stringProp name="Argument.value">${__P(Owners_Loop,2)}</stringProp>
+          <elementProp name="OwnersLoop" elementType="Argument">
+            <stringProp name="Argument.name">OwnersLoop</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersLoop,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Owners_Pacing" elementType="Argument">
-            <stringProp name="Argument.name">Owners_Pacing</stringProp>
-            <stringProp name="Argument.value">${__P(Owners_Pacing,100)}</stringProp>
+          <elementProp name="OwnersPacing" elementType="Argument">
+            <stringProp name="Argument.name">OwnersPacing</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersPacing,100)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Owners_Ramup" elementType="Argument">
-            <stringProp name="Argument.name">Owners_Ramup</stringProp>
-            <stringProp name="Argument.value">${__P(Owners_Ramup,25)}</stringProp>
+          <elementProp name="OwnersRamup" elementType="Argument">
+            <stringProp name="Argument.name">OwnersRamup</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersRamup,25)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="SpringBoot_Duration" elementType="Argument">
-            <stringProp name="Argument.name">SpringBoot_Duration</stringProp>
-            <stringProp name="Argument.value">${__P(SpringBoot_Duration,180)}</stringProp>
+          <elementProp name="petclinic_test_plan_Duration" elementType="Argument">
+            <stringProp name="Argument.name">petclinic_test_plan_Duration</stringProp>
+            <stringProp name="Argument.value">${__P(petclinic_test_plan_Duration,180)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="SpringBoot_IP" elementType="Argument">
@@ -114,21 +114,21 @@
       </Arguments>
       <hashTree/>
       <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Property File Reader" enabled="true">
-        <stringProp name="propFilePath"></stringProp>
+        <stringProp name="propFilePath">C:\ProgramData\Jenkins\.jenkins\workspace\NFT_AutomationExecutor\Framework_Inputs\Property_File\petclinictestplan_30Volume.properties</stringProp>
       </com.tag.jmeter.ext.config.PropertyReader>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Home_Page" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Contr�leur Boucle" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${Home_Page_Loop}</stringProp>
+          <stringProp name="LoopController.loops">${Home_PageLoop}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${Home_Page_Thread}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${Home_Page_Ramup}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${Home_PageThread}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${Home_PageRamup}</stringProp>
         <longProp name="ThreadGroup.start_time">1361531541000</longProp>
         <longProp name="ThreadGroup.end_time">1361531541000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${SpringBoot_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${petclinic_test_plan_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay">1</stringProp>
         <stringProp name="TestPlan.comments">Original : 500 - 10 - 10</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
@@ -189,12 +189,12 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${Search_for_Vets_Loop}</stringProp>
+          <stringProp name="LoopController.loops">${Search_for_VetsLoop}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${Search_for_Vets_Thread}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${Search_for_vets_Ramup}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${Search_for_VetsThread}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${Search_for_vetsRamup}</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${SpringBoot_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${petclinic_test_plan_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
@@ -235,12 +235,12 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${Owners_Loop}</stringProp>
+          <stringProp name="LoopController.loops">${OwnersLoop}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${Owners_Thread}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${Owners_Ramup}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${OwnersThread}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${OwnersRamup}</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${SpringBoot_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${petclinic_test_plan_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
@@ -345,7 +345,7 @@
             </elementProp>
             <elementProp name="influxDBUser" elementType="Argument">
               <stringProp name="Argument.name">influxDBUser</stringProp>
-              <stringProp name="Argument.value">Jmeter</stringProp>
+              <stringProp name="Argument.value">admin</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="influxDBPassword" elementType="Argument">
