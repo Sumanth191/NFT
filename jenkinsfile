@@ -6,15 +6,13 @@ def Email_StartTime
 def Email_EndTime
 def time
 pipeline {
-  agent {
-    label "master"
-  }
+  agent any
   stages {
     stage('Execution Scenario Setup') { 
       steps {
         script {
 		
-		def props = readProperties file: 'C:/Users/vimalrajv/Pictures/FinalDemo/RepoDummy/RepoDummy/Configuration/Jenkins.properties'
+		def props = readProperties file: 'C:/Users/nftuser/Documents/FrameworkRepo/Configuration/Config.properties'
 		def ProjectName=props.ProjectName
 
 		def Scenario_Setup = props.Scenarios
@@ -30,11 +28,11 @@ pipeline {
 		Email_StartTime = new Date().format( "hh:mm a" )
 		
           // to create files
-          bat "java -jar CreateFiles_V2.0.jar"
+          bat "java -jar CreatePropertyBatFiles.jar"
 
           //To get the name& size of Subfolders from the directory  
           def list = []
-          def mydir = "${baseproject}Bat_File"
+          def mydir = "C:/ProgramData/Jenkins/.jenkins/workspace/NFT_AutomationExecutor/Framework_Inputs/Bat_File"
           dir(mydir) {
             def files = findFiles()
             files.each {
@@ -47,7 +45,7 @@ pipeline {
             println "No of subfolders: " + list.size()
           }
           //clear log directory
-          def logdir = "${logdir}"
+          def logdir = "C:/ProgramData/Jenkins/.jenkins/workspace/NFT_AutomationExecutor/Framework_Outputs/Logs"
           def files = new java.io.File(logdir).listFiles()
           for (File file: files)
           if (!file.isDirectory()) file.delete();
@@ -75,9 +73,9 @@ pipeline {
               tests["${temp_name}"] = {
                 node {
                   stage("${stagename}") {
-				 def str5 =  "${baseproject}"+batfilename[1]
+				 def str5 =  "C:/ProgramData/Jenkins/.jenkins/workspace/NFT_AutomationExecutor/Framework_Inputs/"+batfilename[1]
 				 echo "${str5}"
-                    bat "${baseproject}" + batfilename[1] + "> ${logdir}/" + logname[2] + ".txt"
+                    bat "C:/ProgramData/Jenkins/.jenkins/workspace/NFT_AutomationExecutor/Framework_Inputs/" + batfilename[1] + "> ${logdir}/" + logname[2] + ".txt"
                   }
                 }
               }
