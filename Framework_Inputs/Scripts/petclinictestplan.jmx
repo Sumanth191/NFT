@@ -17,86 +17,81 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP cookie manager" enabled="true">
-        <collectionProp name="CookieManager.cookies"/>
-        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
-        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
-      </CookieManager>
-      <hashTree/>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
-          <elementProp name="Home_PageThread" elementType="Argument">
-            <stringProp name="Argument.name">Home_PageThread</stringProp>
-            <stringProp name="Argument.value">${__P(Home_PageThread,15)}</stringProp>
+          <elementProp name="Home_Page_Thread" elementType="Argument">
+            <stringProp name="Argument.name">Home_Page_Thread</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PageThread,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Home_PageLoop" elementType="Argument">
-            <stringProp name="Argument.name">Home_PageLoop</stringProp>
-            <stringProp name="Argument.value">${__P(Home_PageLoop,2)}</stringProp>
+          <elementProp name="Home_Page_Loop" elementType="Argument">
+            <stringProp name="Argument.name">Home_Page_Loop</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PageLoop,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Home_PagePacing" elementType="Argument">
-            <stringProp name="Argument.name">Home_PagePacing</stringProp>
-            <stringProp name="Argument.value">${__P(Home_PagePacing,100)}</stringProp>
+          <elementProp name="Home_Page_Pacing" elementType="Argument">
+            <stringProp name="Argument.name">Home_Page_Pacing</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PagePacing,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Home_PageRamup" elementType="Argument">
-            <stringProp name="Argument.name">Home_PageRamup</stringProp>
-            <stringProp name="Argument.value">${__P(Home_PageRamup,25)}</stringProp>
+          <elementProp name="Home_Page_Ramup" elementType="Argument">
+            <stringProp name="Argument.name">Home_Page_Ramup</stringProp>
+            <stringProp name="Argument.value">${__P(Home_PageRampUp,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_VetsThread" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_VetsThread</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_VetsThread,15)}</stringProp>
+          <elementProp name="Search_For_Vets_Thread" elementType="Argument">
+            <stringProp name="Argument.name">Search_For_Vets_Thread</stringProp>
+            <stringProp name="Argument.value">${__P(Search_For_VetsThread,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Search _For_VetsThread </stringProp>
+          </elementProp>
+          <elementProp name="Search_For_Vets_Loop" elementType="Argument">
+            <stringProp name="Argument.name">Search_For_Vets_Loop</stringProp>
+            <stringProp name="Argument.value">${__P(Search_For_VetsLoop,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_VetsLoop" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_VetsLoop</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_VetsLoop,2)}</stringProp>
+          <elementProp name="Search_For_Vets_Pacing" elementType="Argument">
+            <stringProp name="Argument.name">Search_For_Vets_Pacing</stringProp>
+            <stringProp name="Argument.value">${__P(Search_For_VetsPacing,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_vetsPacing" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_vetsPacing</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_vetsPacing,100)}</stringProp>
+          <elementProp name="Search_For_Vets_Ramup" elementType="Argument">
+            <stringProp name="Argument.name">Search_For_Vets_Ramup</stringProp>
+            <stringProp name="Argument.value">${__P(Search_For_VetsRampUp,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="Search_for_vetsRamup" elementType="Argument">
-            <stringProp name="Argument.name">Search_for_vetsRamup</stringProp>
-            <stringProp name="Argument.value">${__P(Search_for_vetsRamup,25)}</stringProp>
+          <elementProp name="Owners_Thread" elementType="Argument">
+            <stringProp name="Argument.name">Owners_Thread</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersThread,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="OwnersThread" elementType="Argument">
-            <stringProp name="Argument.name">OwnersThread</stringProp>
-            <stringProp name="Argument.value">${__P(OwnersThread,20)}</stringProp>
+          <elementProp name="Owners_Loop" elementType="Argument">
+            <stringProp name="Argument.name">Owners_Loop</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersLoop,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="OwnersLoop" elementType="Argument">
-            <stringProp name="Argument.name">OwnersLoop</stringProp>
-            <stringProp name="Argument.value">${__P(OwnersLoop,2)}</stringProp>
+          <elementProp name="Owners_Pacing" elementType="Argument">
+            <stringProp name="Argument.name">Owners_Pacing</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersPacing,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="OwnersPacing" elementType="Argument">
-            <stringProp name="Argument.name">OwnersPacing</stringProp>
-            <stringProp name="Argument.value">${__P(OwnersPacing,100)}</stringProp>
+          <elementProp name="Owners_Ramup" elementType="Argument">
+            <stringProp name="Argument.name">Owners_Ramup</stringProp>
+            <stringProp name="Argument.value">${__P(OwnersRampUp,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="OwnersRamup" elementType="Argument">
-            <stringProp name="Argument.name">OwnersRamup</stringProp>
-            <stringProp name="Argument.value">${__P(OwnersRamup,25)}</stringProp>
+          <elementProp name="petclinictestplan_Duration" elementType="Argument">
+            <stringProp name="Argument.name">petclinictestplan_Duration</stringProp>
+            <stringProp name="Argument.value">${__P(petclinictestplan_Duration,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="petclinic_test_plan_Duration" elementType="Argument">
-            <stringProp name="Argument.name">petclinic_test_plan_Duration</stringProp>
-            <stringProp name="Argument.value">${__P(petclinic_test_plan_Duration,180)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="SpringBoot_IP" elementType="Argument">
-            <stringProp name="Argument.name">SpringBoot_IP</stringProp>
+          <elementProp name="Spring_Boot_IP" elementType="Argument">
+            <stringProp name="Argument.name">Spring_Boot_IP</stringProp>
             <stringProp name="Argument.value">${__P(SpringBoot_IP,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="SprinBoot_Port" elementType="Argument">
-            <stringProp name="Argument.name">SprinBoot_Port</stringProp>
+          <elementProp name="Sprin_Boot_Port" elementType="Argument">
+            <stringProp name="Argument.name">Sprin_Boot_Port</stringProp>
             <stringProp name="Argument.value">${__P(SprinBoot_Port,8080)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -113,22 +108,18 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Property File Reader" enabled="true">
-        <stringProp name="propFilePath">C:\ProgramData\Jenkins\.jenkins\workspace\NFT_AutomationExecutor\Framework_Inputs\Property_File\petclinictestplan_30Volume.properties</stringProp>
-      </com.tag.jmeter.ext.config.PropertyReader>
-      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Home_Page" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Contr�leur Boucle" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${Home_PageLoop}</stringProp>
+          <stringProp name="LoopController.loops">${Home_Page_Loop}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${Home_PageThread}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${Home_PageRamup}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${Home_Page_Thread}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${Home_Page_Ramup}</stringProp>
         <longProp name="ThreadGroup.start_time">1361531541000</longProp>
         <longProp name="ThreadGroup.end_time">1361531541000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${petclinic_test_plan_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${petclinictestplan_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay">1</stringProp>
         <stringProp name="TestPlan.comments">Original : 500 - 10 - 10</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
@@ -143,8 +134,8 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pr�-d�finies" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${SpringBoot_IP}</stringProp>
-            <stringProp name="HTTPSampler.port">${SprinBoot_Port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${Spring_Boot_IP}</stringProp>
+            <stringProp name="HTTPSampler.port">${Sprin_Boot_Port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${CONTEXT_WEB}/</stringProp>
@@ -162,8 +153,8 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pr�-d�finies" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${SpringBoot_IP}</stringProp>
-            <stringProp name="HTTPSampler.port">${SprinBoot_Port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${Spring_Boot_IP}</stringProp>
+            <stringProp name="HTTPSampler.port">${Sprin_Boot_Port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${CONTEXT_WEB}/resources/css/petclinic.css</stringProp>
@@ -184,17 +175,23 @@
           </TestAction>
           <hashTree/>
         </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+          <boolProp name="displayJMeterProperties">true</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">true</boolProp>
+        </DebugSampler>
+        <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search _For_Vets" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search_For_Vets" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${Search_for_VetsLoop}</stringProp>
+          <stringProp name="LoopController.loops">${Search_For_Vets_Loop}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${Search_for_VetsThread}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${Search_for_vetsRamup}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${Search_For_Vets_Thread}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${Search_For_Vets_Ramup}</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${petclinic_test_plan_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${petclinictestplan_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
@@ -208,8 +205,8 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pr�-d�finies" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${SpringBoot_IP}</stringProp>
-            <stringProp name="HTTPSampler.port">${SprinBoot_Port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${Spring_Boot_IP}</stringProp>
+            <stringProp name="HTTPSampler.port">${Sprin_Boot_Port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${CONTEXT_WEB}/vets.html</stringProp>
@@ -226,7 +223,7 @@
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">${Search_for_vets_Pacing}</stringProp>
+            <stringProp name="ActionProcessor.duration">${Search_For_Vets_Pacing}</stringProp>
           </TestAction>
           <hashTree/>
         </hashTree>
@@ -235,12 +232,12 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${OwnersLoop}</stringProp>
+          <stringProp name="LoopController.loops">${Owners_Loop}</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${OwnersThread}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${OwnersRamup}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${Owners_Thread}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${Owners_Ramup}</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${petclinic_test_plan_Duration}</stringProp>
+        <stringProp name="ThreadGroup.duration">${petclinictestplan_Duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
@@ -254,8 +251,8 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pr�-d�finies" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${SpringBoot_IP}</stringProp>
-            <stringProp name="HTTPSampler.port">${SprinBoot_Port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${Spring_Boot_IP}</stringProp>
+            <stringProp name="HTTPSampler.port">${Sprin_Boot_Port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${CONTEXT_WEB}/owners/find</stringProp>
@@ -273,8 +270,8 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pr�-d�finies" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${SpringBoot_IP}</stringProp>
-            <stringProp name="HTTPSampler.port">${SprinBoot_Port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${Spring_Boot_IP}</stringProp>
+            <stringProp name="HTTPSampler.port">${Sprin_Boot_Port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${CONTEXT_WEB}/owners?lastName=</stringProp>
@@ -292,8 +289,8 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pr�-d�finies" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${SpringBoot_IP}</stringProp>
-            <stringProp name="HTTPSampler.port">${SprinBoot_Port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${Spring_Boot_IP}</stringProp>
+            <stringProp name="HTTPSampler.port">${Sprin_Boot_Port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${CONTEXT_WEB}/owners/${count}</stringProp>
@@ -384,7 +381,7 @@
       </BackendListener>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Results" enabled="true">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
@@ -397,20 +394,27 @@
             <message>true</message>
             <threadName>true</threadName>
             <dataType>true</dataType>
-            <encoding>false</encoding>
+            <encoding>true</encoding>
             <assertions>true</assertions>
             <subresults>true</subresults>
-            <responseData>false</responseData>
-            <samplerData>false</samplerData>
-            <xml>false</xml>
-            <fieldNames>false</fieldNames>
-            <responseHeaders>false</responseHeaders>
-            <requestHeaders>false</requestHeaders>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
             <responseDataOnError>false</responseDataOnError>
-            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
             <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
@@ -446,7 +450,7 @@
             <threadCounts>true</threadCounts>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">C:\Users\nftuser\Desktop\AggregrateReport.jtl</stringProp>
         <stringProp name="TestPlan.comments">2843387</stringProp>
       </ResultCollector>
       <hashTree/>
