@@ -17,6 +17,7 @@ pipeline {
 
 		def Scenario_Setup = props.Scenarios
 		def Maximum_Error =props.MaximumPermissibleError
+		echo "${Maximum_Error}"
 		def Email_Failure =props.EmailRecipientsIncaseofExecutionFailure
 		
 		Buildstatus = false
