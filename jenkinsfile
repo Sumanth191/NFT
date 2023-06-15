@@ -161,11 +161,12 @@ Execution Status: Failure <br><br>Regards,<br>PE Team''',  subject: "${ProjectNa
  def Error_Handling(){
 
              def logdir = "${logdir}"
+		echo"${logdir}"
              def files = new java.io.File(logdir).listFiles()
              def Error_Percent=0.0
                if (files.length >0){
               new File(logdir).eachFile(FileType.FILES) { file ->
-              def index = file.findLastIndexOf {it =~ "summary =" }
+              def index = file.findLastIndexOf {it =~ "Summary =" }
               //echo "${index}"
               String str = file.readLines().get(index)
               //echo "${str}"
