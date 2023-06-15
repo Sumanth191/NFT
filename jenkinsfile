@@ -16,8 +16,8 @@ pipeline {
 		def ProjectName=props.ProjectName
 
 		def Scenario_Setup = props.Scenarios
-		def Maximum_Error =props.MaximumError
-		def Email_Failure =props.Email_Failure
+		def Maximum_Error =props.MaximumPermissibleError
+		def Email_Failure =props.EmailRecipientsIncaseofExecutionFailure
 		
 		Buildstatus = false
 		
