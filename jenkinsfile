@@ -118,13 +118,13 @@ pipeline {
 	steps{
 	script{
 	
-	def props = readProperties file: 'C:/Users/vimalrajv/Pictures/FinalDemo/RepoDummy/RepoDummy/Configuration/Jenkins.properties'
+	def props = readProperties file: 'C:/Users/nftuser/Documents/FrameworkRepo/Configuration/Config.properties'
 		
 		def ProjectName=props.ProjectName
 
 		def Scenario_Setup = props.Scenarios
-		def Maximum_Error =props.MaximumError
-		def Email_Failure =props.Email_BuildFailure
+		def Maximum_Error =props.'MaximumPermissibleError(in%)'
+		def Email_Failure =props.EmailRecipientsIncaseofExecutionFailure
 	echo"${Email_Failure}"
 	
     
