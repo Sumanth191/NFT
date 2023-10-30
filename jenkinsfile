@@ -16,7 +16,10 @@ pipeline {
 		def ProjectName=props.ProjectName
 
 		def Scenario_Setup = props.Scenarios
-		def Maximum_Error =props.MaximumError
+		def Propertyname="MaximumPermissibleError(in%)"
+		def Maximum_Error =props.getProperty(Propertyname)
+		
+		echo "${Maximum_Error}"
 		def Email_Failure =props.Email_Failure
 		
 		Buildstatus = false
