@@ -16,8 +16,7 @@ pipeline {
 		def ProjectName=props.ProjectName
 
 		def Scenario_Setup = props.Scenarios
-		def Propertyname="MaximumPermissibleError(in%)"
-		def Maximum_Error =props.getProperty(Propertyname)
+		def Maximum_Error =props."MaximumPermissibleError(in%)"
 		
 		echo "${Maximum_Error}"
 		def Email_Failure =props.Email_Failure
@@ -98,53 +97,53 @@ pipeline {
           }
 
           // to store pdf report
-          def date1 = new Date()
-          def end_time = date1.getTime()
-		   def date = new Date().format( 'dd-MM-YYYY' )
-			def datetime = new Date()
-			def hours = datetime.hours
-			def mins =  datetime.minutes
-			def sec =  datetime.seconds
-			time = "${date}"+"_${hours}_" +"${mins}"
-          bat "curl -o ${grafanareportpath}_${time}.pdf http://localhost:8686/api/v5/report/TestProject?from=${start_time}"
+         // def date1 = new Date()
+        //  def end_time = date1.getTime()
+	//	   def date = new Date().format( 'dd-MM-YYYY' )
+	//		def datetime = new Date()
+	//		def hours = datetime.hours
+	//		def mins =  datetime.minutes
+	//		def sec =  datetime.seconds
+	//		time = "${date}"+"_${hours}_" +"${mins}"
+        //  bat "curl -o ${grafanareportpath}_${time}.pdf http://localhost:8686/api/v5/report/TestProject?from=${start_time}"
           
           //bat "curl -o ${grafanareportpath} -d from=${start_time} --data-urlencode to=${end_time} http://localhost:8686/api/v5/report/TestProject?"
 		  
-		  Buildstatus = true
+	//	  Buildstatus = true
           
-          Email_EndTime = new Date().format( "hh:mm a" )
+         // Email_EndTime = new Date().format( "hh:mm a" )
         }
       }
     }
-	stage('Email'){
-	steps{
-	script{
+//	stage('Email'){
+//	steps{
+//	script{
 	
-	def props = readProperties file: 'C:/Users/vimalrajv/Pictures/FinalDemo/RepoDummy/RepoDummy/Configuration/Jenkins.properties'
+//	def props = readProperties file: 'C:/Users/vimalrajv/Pictures/FinalDemo/RepoDummy/RepoDummy/Configuration/Jenkins.properties'
 		
-		def ProjectName=props.ProjectName
+//		def ProjectName=props.ProjectName
 
-		def Scenario_Setup = props.Scenarios
-		def Maximum_Error =props.MaximumError
-		def Email_Failure =props.Email_BuildFailure
-	echo"${Email_Failure}"
+//		def Scenario_Setup = props.Scenarios
+//		def Maximum_Error =props.MaximumError
+//		def Email_Failure =props.Email_BuildFailure
+//	echo"${Email_Failure}"
 	
     
- Email_Date = new Date().format( 'dd-MM-YYYY' )
+// Email_Date = new Date().format( 'dd-MM-YYYY' )
 
-	if(Buildstatus){
-	emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ''' +"${Scenario_Setup}" +'''test high level execution report conducted today between ''' +"${Email_Date} "+"${Email_StartTime}"+''' to '''+"${Email_EndTime}"+ '''<br><br>
-Execution Status: Success <br><br>Regards,<br>PE Team''',  subject: "${ProjectName} | ${Scenario_Setup} | ${Email_Date}  | Success", to: "${Email_Failure}"
-	}
-	else{
-	emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ''' +"${Scenario_Setup}" +'''test high level execution report conducted today between ''' +"${Email_Date} "+"${Email_StartTime}"+''' to '''+"${Email_EndTime}"+ '''<br><br>
-Execution Status: Failure <br><br>Regards,<br>PE Team''',  subject: "${ProjectName} | ${Scenario_Setup} | ${Email_Date}  | Failure", to: "${Email_Failure}"
+//	if(Buildstatus){
+//	emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ''' +"${Scenario_Setup}" +'''test high level execution report conducted today between ''' +"${Email_Date} "+"${Email_StartTime}"+''' to '''+"${Email_EndTime}"+ '''<br><br>
+//Execution Status: Success <br><br>Regards,<br>PE Team''',  subject: "${ProjectName} | ${Scenario_Setup} | ${Email_Date}  | Success", to: "${Email_Failure}"
+//	}
+//	else{
+//	emailext attachmentsPattern: '**/Framework_Outputs/Reports/GrafanaReport/GrafanaReport_${time}.pdf', body:'''Dear Team,<br><br>Please find attached the ''' +"${Scenario_Setup}" +'''test high level execution report conducted today between ''' +"${Email_Date} "+"${Email_StartTime}"+''' to '''+"${Email_EndTime}"+ '''<br><br>
+//Execution Status: Failure <br><br>Regards,<br>PE Team''',  subject: "${ProjectName} | ${Scenario_Setup} | ${Email_Date}  | Failure", to: "${Email_Failure}"
 	
-	}
-	}
-	}
+//	}
+//	}
+//	}
 	
-	}
+//	}
 	
   }
    //post{
@@ -162,12 +161,12 @@ Execution Status: Failure <br><br>Regards,<br>PE Team''',  subject: "${ProjectNa
 @NonCPS
  def Error_Handling(){
 
-             def logdir = "${logdir}"
+             def logdir = "C:/ProgramData/Jenkins/.jenkins/workspace/Automation_TestExecutor/Framework_Outputs/Logs"
              def files = new java.io.File(logdir).listFiles()
              def Error_Percent=0.0
                if (files.length >0){
               new File(logdir).eachFile(FileType.FILES) { file ->
-              def index = file.findLastIndexOf {it =~ "summary =" }
+              def index = file.findLastIndexOf {it =~ "Summary =" }
               //echo "${index}"
               String str = file.readLines().get(index)
               //echo "${str}"
