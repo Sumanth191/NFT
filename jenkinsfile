@@ -96,16 +96,16 @@ pipeline {
             }
           }
 
-          // to store pdf report
-         // def date1 = new Date()
-        //  def end_time = date1.getTime()
-	//	   def date = new Date().format( 'dd-MM-YYYY' )
-	//		def datetime = new Date()
-	//		def hours = datetime.hours
-	//		def mins =  datetime.minutes
-	//		def sec =  datetime.seconds
-	//		time = "${date}"+"_${hours}_" +"${mins}"
-        //  bat "curl -o ${grafanareportpath}_${time}.pdf http://localhost:8686/api/v5/report/TestProject?from=${start_time}"
+           //to store pdf report
+			def date1 = new Date()
+			def end_time = date1.getTime()
+			def date = new Date().format( 'dd-MM-YYYY' )
+			def datetime = new Date()
+			def hours = datetime.hours
+			def mins =  datetime.minutes
+			def sec =  datetime.seconds
+			time = "${date}"+"_${hours}_" +"${mins}"
+			bat "curl -o C:/Users/nftuser/Documents/Execution_Report_${time}.pdf http://localhost:8686/api/v5/report/Tablet_2_0?apitoken=eyJrIjoiMzBPcEZ5Sk5icXhjOFdTZ3h2T3ZMRGhpUTJEdFhrUnciLCJuIjoic2RzZCIsImlkIjoxfQ==?from=${start_time}"
           
           //bat "curl -o ${grafanareportpath} -d from=${start_time} --data-urlencode to=${end_time} http://localhost:8686/api/v5/report/TestProject?"
 		  
