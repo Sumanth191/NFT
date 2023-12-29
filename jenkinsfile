@@ -106,7 +106,7 @@ pipeline {
 			def sec =  datetime.seconds
 			time = "${date}"+"_${hours}_" +"${mins}"
 			
-			bat "curl -o C:/Users/nftuser/Documents/Execution_Report/${time}.pdf http://localhost:8686/api/v5/report/Tablet_2_0?from="${start_time}"&apitoken=eyJrIjoiMzBPcEZ5Sk5icXhjOFdTZ3h2T3ZMRGhpUTJEdFhrUnciLCJuIjoic2RzZCIsImlkIjoxfQ=="
+			bat "curl -o C:/Users/nftuser/Documents/Execution_Report/${time}.pdf http://localhost:8686/api/v5/report/Tablet_2_0?from='${start_time}'&apitoken=eyJrIjoiMzBPcEZ5Sk5icXhjOFdTZ3h2T3ZMRGhpUTJEdFhrUnciLCJuIjoic2RzZCIsImlkIjoxfQ=="
           
           //bat "curl -o ${grafanareportpath} -d from=${start_time} --data-urlencode to=${end_time} http://localhost:8686/api/v5/report/TestProject?"
 		  
