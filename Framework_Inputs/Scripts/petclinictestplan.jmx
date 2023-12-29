@@ -325,11 +325,6 @@
               <stringProp name="Argument.value">Test-Node</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="runId" elementType="Argument">
-              <stringProp name="Argument.name">runId</stringProp>
-              <stringProp name="Argument.value">R293Demo</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="influxDBHost" elementType="Argument">
               <stringProp name="Argument.name">influxDBHost</stringProp>
               <stringProp name="Argument.value">${InfluxDBIP}</stringProp>
@@ -372,7 +367,12 @@
             </elementProp>
             <elementProp name="recordSubSamples" elementType="Argument">
               <stringProp name="Argument.name">recordSubSamples</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
+              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="runId" elementType="Argument">
+              <stringProp name="Argument.name">runId</stringProp>
+              <stringProp name="Argument.value">R29LastDemo</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
