@@ -1797,3 +1797,251 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1698654194788,5,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,1,null,0,26,0
 1698654194789,2,Find owner,200,,Owners 3-2,text,true,,3641,127,1,1,http://localhost:8080/owners/find,2,0,0
 1698654194791,3,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,3,0,0
+1704191647060,53,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,136,31
+1704191647183,53,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,47,0,31
+1704191647061,66,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,135,31
+1704191647183,53,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,47,0,31
+1704191647238,13,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,13,0,0
+1704191647260,5,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,20,1
+1704191647269,5,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191647263,15,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,19,1
+1704191647269,4,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191647274,11,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,10,0,0
+1704191647285,5,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,12,1
+1704191647286,5,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,5,0,1
+1704191647302,5,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,12,1
+1704191647302,5,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191647297,14,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,16,1
+1704191647298,3,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,3,0,1
+1704191647302,11,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,11,0,0
+1704191647319,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,15,1
+1704191647320,4,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,3,0,1
+1704191647338,7,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,14,1
+1704191647340,7,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,6,0,1
+1704191647328,21,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,11,1
+1704191647328,5,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,5,0,1
+1704191647333,16,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,15,0,0
+1704191647359,6,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,12,1
+1704191647359,6,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,6,0,1
+1704191647377,6,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,12,1
+1704191647377,6,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,6,0,1
+1704191647360,25,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,12,0
+1704191647361,8,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,6,0,0
+1704191647369,17,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,17,0,0
+1704191647395,7,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,12,1
+1704191647396,7,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,7,0,1
+1704191647397,14,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,13,1
+1704191647397,4,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191647402,10,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,10,0,0
+1704191647414,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,13,0
+1704191647415,4,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,0
+1704191647424,20,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,1,null,0,19,1
+1704191647424,8,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,7,0,1
+1704191647432,12,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,12,0,0
+1704191647464,32,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,1,null,0,11,2
+1704191647464,8,Find owner,200,,Owners 3-1,text,true,,3641,127,1,1,http://localhost:8080/owners/find,7,0,2
+1704191647472,24,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,23,0,0
+1704191648047,12,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,2
+1704191648047,6,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,6,0,2
+1704191648053,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,4,0,0
+1704191648084,12,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,18,1
+1704191648084,5,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191648089,7,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648115,10,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,20,1
+1704191648115,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191648119,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648146,11,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,19,1
+1704191648146,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191648150,7,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648177,9,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,22,1
+1704191648177,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191648181,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648209,9,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,22,1
+1704191648209,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191648213,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648241,19,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,12,1
+1704191648241,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191648245,16,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,13,0,0
+1704191648274,9,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,21,1
+1704191648274,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191648278,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,2,0,0
+1704191648305,10,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,20,1
+1704191648305,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191648310,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648336,9,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,21,1
+1704191648336,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191648340,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648367,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,23,1
+1704191648367,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191648370,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191648399,11,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,19,1
+1704191648399,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191648402,8,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,4,0,0
+1704191659061,7,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,14,2
+1704191659062,7,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,7,0,2
+1704191659061,17,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,18,1
+1704191659062,6,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,6,0,1
+1704191659069,11,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,10,0,0
+1704191659082,6,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,24,2
+1704191659082,6,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,6,0,2
+1704191659096,13,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,18,1
+1704191659096,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191659100,9,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,9,0,0
+1704191659113,5,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,25,1
+1704191659113,5,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191659127,26,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,21,1
+1704191659127,7,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,7,0,1
+1704191659135,19,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,17,0,0
+1704191659146,7,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,21,2
+1704191659146,7,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,7,0,2
+1704191659177,9,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,20,1
+1704191659177,9,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,8,0,1
+1704191659175,25,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,13,1
+1704191659175,6,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,5,0,1
+1704191659181,19,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,19,0,0
+1704191659206,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,1
+1704191659207,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191659222,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,11,1
+1704191659222,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191659213,16,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,12,0
+1704191659214,3,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,3,0,0
+1704191659217,13,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,12,0,0
+1704191659237,6,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,1
+1704191659238,6,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,5,0,1
+1704191659241,15,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,13,1
+1704191659242,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191659246,11,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,10,0,0
+1704191659255,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,1
+1704191659256,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191659271,10,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,1
+1704191659271,10,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,10,0,1
+1704191659269,20,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,1,null,0,14,1
+1704191659270,9,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,9,0,1
+1704191659280,11,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,11,0,0
+1704191659303,13,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,1,null,0,14,1
+1704191659304,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,1,http://localhost:8080/owners/find,3,0,1
+1704191659308,9,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,9,0,0
+1704191788344,47,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,128,27
+1704191788460,47,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,42,0,27
+1704191788344,58,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,130,27
+1704191788460,47,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,42,0,27
+1704191788508,11,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,11,0,0
+1704191788529,6,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,19,1
+1704191788538,6,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,5,0,1
+1704191788533,12,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,17,1
+1704191788538,4,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191788543,8,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,8,0,0
+1704191788555,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,11,1
+1704191788555,4,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191788571,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,11,1
+1704191788571,4,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191788563,15,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,10,1
+1704191788563,4,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191788567,11,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,10,0,0
+1704191788587,7,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,11,1
+1704191788587,7,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,7,0,1
+1704191788589,19,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,12,1
+1704191788589,8,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,7,0,1
+1704191788597,11,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,11,0,0
+1704191788606,6,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,13,1
+1704191788606,6,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,6,0,1
+1704191788625,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,12,1
+1704191788626,4,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,3,0,1
+1704191788621,19,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,11,1
+1704191788621,3,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,3,0,1
+1704191788624,16,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,16,0,0
+1704191788642,3,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,11,1
+1704191788642,3,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,3,0,1
+1704191788657,3,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,11,1
+1704191788657,3,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,3,0,1
+1704191788652,12,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,2,null,0,12,1
+1704191788652,3,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,3,0,1
+1704191788656,9,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,9,0,0
+1704191788672,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-1,,true,,4109,125,1,2,null,0,11,1
+1704191788672,4,Vets,200,,Search_For_Vets 2-1,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191788677,18,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,1,null,0,11,1
+1704191788677,8,Find owner,200,,Owners 3-1,text,true,,3641,127,1,2,http://localhost:8080/owners/find,7,0,1
+1704191788685,10,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,10,0,0
+1704191788706,13,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-1,,true,,8410,259,1,1,null,0,13,1
+1704191788707,3,Find owner,200,,Owners 3-1,text,true,,3641,127,1,1,http://localhost:8080/owners/find,3,0,1
+1704191788710,10,"Find owner with lastname=""""",200,,Owners 3-1,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,10,0,0
+1704191789334,10,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,15,1
+1704191789335,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,4,0,1
+1704191789339,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789359,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,22,0
+1704191789360,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,2,0,0
+1704191789363,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789389,6,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789390,2,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,2,0,1
+1704191789393,4,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,2,0,0
+1704191789419,10,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,21,1
+1704191789419,4,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789423,6,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789450,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789450,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789453,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789482,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789482,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789485,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789514,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789514,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789517,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789547,7,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789547,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,2,0,1
+1704191789550,4,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,2,0,0
+1704191789578,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789579,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,2,0,1
+1704191789582,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,2,0,0
+1704191789610,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789610,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789613,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191789642,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789642,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789645,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,2,0,0
+1704191789674,8,Home_Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Home_Page 1-1,,true,,211286,259,1,1,null,0,24,1
+1704191789674,3,Home page,200,,Home_Page 1-1,text,true,,3091,116,1,1,http://localhost:8080/,3,0,1
+1704191789677,5,CSS,200,,Home_Page 1-1,text,true,,208195,143,1,1,http://localhost:8080/resources/css/petclinic.css,3,0,0
+1704191800340,8,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,15,2
+1704191800341,8,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,7,0,2
+1704191800363,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,1
+1704191800364,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191800342,17,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,20,1
+1704191800343,5,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,5,0,1
+1704191800348,12,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,12,0,0
+1704191800379,5,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,26,0
+1704191800380,13,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,17,1
+1704191800380,5,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,5,0,0
+1704191800380,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191800385,9,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,9,0,0
+1704191800410,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,13,1
+1704191800411,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191800410,13,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,18,1
+1704191800411,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,1
+1704191800416,9,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,8,0,0
+1704191800427,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,1
+1704191800427,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191800443,7,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,23,1
+1704191800441,20,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,12,1
+1704191800444,7,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,6,0,1
+1704191800442,10,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,9,0,1
+1704191800452,10,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,10,0,0
+1704191800473,4,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,13,1
+1704191800474,4,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,4,0,1
+1704191800473,13,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,12,0
+1704191800474,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,4,0,0
+1704191800478,9,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,9,0,0
+1704191800490,3,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,12,0
+1704191800491,3,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,3,0,0
+1704191800505,5,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,11,1
+1704191800505,5,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,5,0,1
+1704191800498,17,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,2,null,0,12,1
+1704191800499,4,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,3,0,1
+1704191800503,13,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,12,0,0
+1704191800521,14,Search _For_Vets,200,"Number of samples in transaction : 1, number of failing samples : 0",Search_For_Vets 2-2,,true,,4109,125,1,2,null,0,11,2
+1704191800521,14,Vets,200,,Search_For_Vets 2-2,text,true,,4109,125,1,2,http://localhost:8080/vets.html,14,0,2
+1704191800527,17,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,1,null,0,13,1
+1704191800528,6,Find owner,200,,Owners 3-2,text,true,,3641,127,1,2,http://localhost:8080/owners/find,6,0,1
+1704191800535,11,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,2,http://localhost:8080/owners?lastName=,11,0,0
+1704191800557,17,Owners,200,"Number of samples in transaction : 2, number of failing samples : 0",Owners 3-2,,true,,8410,259,1,1,null,0,12,1
+1704191800557,5,Find owner,200,,Owners 3-2,text,true,,3641,127,1,1,http://localhost:8080/owners/find,4,0,1
+1704191800562,12,"Find owner with lastname=""""",200,,Owners 3-2,text,true,,4769,132,1,1,http://localhost:8080/owners?lastName=,11,0,0
