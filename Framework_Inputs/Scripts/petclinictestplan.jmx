@@ -120,7 +120,7 @@
         <longProp name="ThreadGroup.end_time">1361531541000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${petclinictestplan_Duration}</stringProp>
-        <stringProp name="ThreadGroup.delay">1</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
         <stringProp name="TestPlan.comments">Original : 500 - 10 - 10</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
